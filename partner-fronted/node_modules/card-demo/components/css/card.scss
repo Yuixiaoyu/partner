@@ -1,0 +1,41 @@
+.m-card{
+  width: 270px;
+  border-radius: 8px;
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 6px 10px rgba(95, 101, 105, 0.15);
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+  //m-card-img
+  &-img {
+    height: 152px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-summary {
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+  }
+}
+
+.footer {
+  padding: 0 8px;
+  font-size: 12px;
+  text-align: left;
+}
+.level {
+  color: #9199A1;
+  margin-bottom: 8px;
+}
+.price {
+  color: #F01414;
+}
+.footer-spring{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+  font-size: 12px;
+}
