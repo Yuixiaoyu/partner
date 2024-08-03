@@ -96,7 +96,7 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.43103448",
-    "settings.editor.selected.configurable": "zielu.gittoolbox.prj.config.v2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true",
     "zielu.gittoolbox.prj.config.selected.tab.id": "zielu.gittoolbox.config.shared.commit"
   },
@@ -245,7 +245,7 @@
       <workItem from="1722071128826" duration="125000" />
       <workItem from="1722071261424" duration="113952000" />
       <workItem from="1722666962388" duration="70000" />
-      <workItem from="1722667040084" duration="1782000" />
+      <workItem from="1722667040084" duration="2614000" />
     </task>
     <servers />
   </component>
@@ -255,6 +255,17 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="RECENT_FILTERS">
       <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
         <entry key="User">
           <value>
             <list>
@@ -272,7 +283,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

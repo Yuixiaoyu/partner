@@ -21,7 +21,9 @@
 >
 > 后端
 >
-> * Springboot
-> * Redis
+> * Springboot2
+> * Redis缓存
 > * MyBatis-Plus
+> * Redisson 分布式锁
+> * Swagger + Knife4j 接口文档
 
