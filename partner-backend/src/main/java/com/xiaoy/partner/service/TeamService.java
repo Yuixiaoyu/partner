@@ -5,6 +5,7 @@ import com.xiaoy.partner.model.domain.Team;
 import com.xiaoy.partner.model.domain.User;
 import com.xiaoy.partner.model.dto.TeamQuery;
 import com.xiaoy.partner.model.request.TeamJoinRequest;
+import com.xiaoy.partner.model.request.TeamQuitRequest;
 import com.xiaoy.partner.model.request.TeamUpdateRequest;
 import com.xiaoy.partner.model.vo.TeamUserVo;
 
@@ -49,4 +50,20 @@ public interface TeamService extends IService<Team> {
      * @return
      */
     boolean joinTeam(TeamJoinRequest teamJoinRequest, User loginUser);
+
+    /**
+     * 退出队伍
+     * @param teamQuitRequest
+     * @param loginUser
+     * @return
+     */
+    boolean QuitTeam(TeamQuitRequest teamQuitRequest, User loginUser);
+
+    /**
+     * 解散队伍
+     * @param id
+     * @param loginUser
+     * @return
+     */
+    boolean deleteTeam(long id,User loginUser);
 }

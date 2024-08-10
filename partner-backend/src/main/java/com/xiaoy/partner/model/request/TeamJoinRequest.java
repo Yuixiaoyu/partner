@@ -7,9 +7,9 @@ import java.util.Date;
 
 /**
  * ClassName: TeamJoinRequest
- * Description:
+ * Description: 用户加入队伍请求体
  *
- * @Author: fy
+ * @Author: xiaoyu
  * @create: 2024-08-03 13:52
  * @version: 1.0
  */

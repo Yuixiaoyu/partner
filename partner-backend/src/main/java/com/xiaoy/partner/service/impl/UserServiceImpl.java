@@ -8,10 +8,13 @@ import com.xiaoy.partner.contant.UserConstant;
 import com.xiaoy.partner.exception.BusinessException;
 import com.xiaoy.partner.common.ErrorCode;
 import com.xiaoy.partner.model.domain.User;
+import com.xiaoy.partner.model.vo.UserVo;
 import com.xiaoy.partner.service.UserService;
 import com.xiaoy.partner.mapper.UserMapper;
+import com.xiaoy.partner.utils.AlgorithmUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.math3.util.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
 import org.springframework.stereotype.Service;
@@ -290,6 +293,44 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
     public boolean isAdmin(User user) {
         // 仅管理员可查询
         return user != null && user.getUserRole() == ADMIN_ROLE;
+    }
+
+    @Override
+    public List<User> matchUser(long num, User loginUser) {
+        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+        queryWrapper.select("id","tags");
+        queryWrapper.isNotNull("tags");
+        List<User> userList = list(queryWrapper);
+        String tags = loginUser.getTags();
+        Gson gson = new Gson();
+        List<String> tagList = gson.fromJson(tags, new TypeToken<List<String>>() {
+        }.getType());
+        //用户的下标==》相似度
+        List<Pair<User,Long>> list = new ArrayList<>();
+        for (int i = 0; i < userList.size(); i++) {
+            User user = userList.get(i);
+            String userTags = user.getTags();
+            //无标签或者当前用户是自己
+            if (StringUtils.isBlank(userTags)|| user.getId() == loginUser.getId()){
+                continue;
+            }
+            List<String> userTagList = gson.fromJson(userTags, new TypeToken<List<String>>() {
+            }.getType());
+            long distance = AlgorithmUtils.minDistance(tagList, userTagList);
+            list.add(new Pair<>(user,distance));
+        }
+        List<Pair<User,Long>> topUserPairList = list.stream().sorted((a,b)->(int) (a.getValue()-b.getValue())).limit(num).collect(Collectors.toList());
+        //原本顺序的userId
+        List<Long> userIdList = topUserPairList.stream().map(pair->pair.getKey().getId()).collect(Collectors.toList());
+        queryWrapper = new QueryWrapper<>();
+        queryWrapper.in("id",userIdList);
+        //
+        Map<Long, List<User>> userIdUserListMap = list(queryWrapper).stream().map(this::getSafetyUser).collect(Collectors.groupingBy(User::getId));
+        List<User> finalUserList = new ArrayList<>();
+        for (Long userId : userIdList) {
+            finalUserList.add(userIdUserListMap.get(userId).get(0));
+        }
+        return finalUserList;
     }
 
     /**

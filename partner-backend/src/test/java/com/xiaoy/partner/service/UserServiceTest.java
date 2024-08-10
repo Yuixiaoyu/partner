@@ -150,12 +150,12 @@ public class UserServiceTest {
     @Test
     public void userInsertTestData(){
         InsertTestDataToDB dataToDB = new InsertTestDataToDB(userService);
-        //try {
-        //    dataToDB.processBatchInsert(1000);
-        //} catch (InterruptedException e) {
-        //    throw new RuntimeException(e);
-        //}
-        dataToDB.insertBigData(1000);
+        try {
+            dataToDB.processBatchInsert(100000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        //dataToDB.insertBigData(100000);
     }
     @Test
     public void exportData(){

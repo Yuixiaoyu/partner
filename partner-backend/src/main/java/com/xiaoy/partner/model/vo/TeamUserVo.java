@@ -13,7 +13,7 @@ import java.util.List;
  * ClassName: TeamUserVo
  * Description: 队伍和用户信息封装类
  *
- * @Author: fy
+ * @Author: xiaoyu
  * @create: 2024-08-04 13:29
  * @version: 1.0
  */
@@ -35,6 +35,11 @@ public class TeamUserVo implements Serializable {
      * 描述
      */
     private String description;
+
+    /**
+     * 队伍图片
+     */
+    private String img;
 
     /**
      * 最大人数
@@ -71,6 +76,16 @@ public class TeamUserVo implements Serializable {
      * 创建人用户信息
      */
     private UserVo createUserVo;
+
+    /**
+     * 已加入人数
+     */
+    private Integer hasJoinNum;
+
+    /**
+     * 用户是否已加入
+     */
+    private boolean hasJoin;
 
 
 }

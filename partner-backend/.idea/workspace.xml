@@ -5,12 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e0dbdba-c018-4b28-b556-2d126a711db5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/request/TeamQuitRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/PartnerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/PartnerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/common/PageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/common/PageRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/config/RedissonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/config/RedissonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/config/Swagger2Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/config/Swagger2Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/controller/TeamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/job/PreCacheJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/job/PreCacheJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/domain/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/domain/Team.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/dto/TeamQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/dto/TeamQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/enums/TeamStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/enums/TeamStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/request/TeamAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/request/TeamAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/request/TeamJoinRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/request/TeamJoinRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/request/TeamUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/request/TeamUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/vo/TeamUserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/model/vo/TeamUserVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/once/ExcelData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/once/ExcelData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/once/ImportExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/once/ImportExcel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/service/TeamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/service/impl/TeamServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/service/impl/TeamServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/tools/InsertTestDataToDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xiaoy/partner/tools/InsertTestDataToDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/xiaoy/partner/service/RedissonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xiaoy/partner/service/RedissonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/xiaoy/partner/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/xiaoy/partner/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/config/Swagger2Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/config/Swagger2Config.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/controller/TeamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/controller/TeamController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/service/impl/TeamServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/service/impl/TeamServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/model/request/TeamAddRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/model/request/TeamJoinRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/model/request/TeamUpdateRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/service/TeamService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/service/impl/TeamServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/service/impl/UserServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/service/impl/UserServiceImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xiaoy/partner/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +107,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.AlgorithmUtilsTest.AlgorithmTest.executor": "Run",
     "JUnit.RedissonTest.test.executor": "Run",
     "JUnit.TestGeneratedData.multiThreadedDataStorage6.executor": "Run",
     "JUnit.UserServiceTest.exportData.executor": "Run",
@@ -94,7 +124,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.PartnerApplication.executor": "Debug",
+    "Spring Boot.PartnerApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "G:/Code/partnerCode",
@@ -105,7 +135,7 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.43103448",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "database.query.execution",
     "vue.rearranger.settings.migration": "true",
     "zielu.gittoolbox.prj.config.selected.tab.id": "zielu.gittoolbox.config.shared.commit"
   },
@@ -135,6 +165,22 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.PartnerApplication">
+    <configuration name="AlgorithmUtilsTest.AlgorithmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="partner-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xiaoy.partner.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xiaoy.partner.service" />
+      <option name="MAIN_CLASS_NAME" value="com.xiaoy.partner.service.AlgorithmUtilsTest" />
+      <option name="METHOD_NAME" value="AlgorithmTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RedissonTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="partner-backend" />
       <extension name="coverage">
@@ -146,22 +192,6 @@
       <option name="PACKAGE_NAME" value="com.xiaoy.partner.service" />
       <option name="MAIN_CLASS_NAME" value="com.xiaoy.partner.service.RedissonTest" />
       <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.test111" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="partner-backend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xiaoy.partner.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.xiaoy.partner.service" />
-      <option name="MAIN_CLASS_NAME" value="com.xiaoy.partner.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="test111" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -225,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AlgorithmUtilsTest.AlgorithmTest" />
+        <item itemvalue="JUnit.UserServiceTest.userInsertTestData" />
         <item itemvalue="JUnit.RedissonTest.test" />
         <item itemvalue="JUnit.UserServiceTest.testRedis" />
-        <item itemvalue="JUnit.UserServiceTest.userInsertTestData" />
         <item itemvalue="JUnit.UserServiceTest.testCode" />
-        <item itemvalue="JUnit.UserServiceTest.test111" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +285,8 @@
       <workItem from="1722071261424" duration="113952000" />
       <workItem from="1722666962388" duration="70000" />
       <workItem from="1722667040084" duration="2614000" />
-      <workItem from="1722670936285" duration="14797000" />
+      <workItem from="1722670936285" duration="18334000" />
+      <workItem from="1722993243995" duration="27008000" />
     </task>
     <servers />
   </component>
@@ -316,7 +347,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xiaoy/partner/service/impl/TeamServiceImpl.java</url>
-          <line>110</line>
+          <line>119</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>

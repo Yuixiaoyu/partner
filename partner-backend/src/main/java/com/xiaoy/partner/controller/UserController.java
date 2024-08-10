@@ -10,6 +10,7 @@ import com.xiaoy.partner.exception.BusinessException;
 import com.xiaoy.partner.model.domain.User;
 import com.xiaoy.partner.model.request.UserLoginRequest;
 import com.xiaoy.partner.model.request.UserRegisterRequest;
+import com.xiaoy.partner.model.vo.UserVo;
 import com.xiaoy.partner.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -201,6 +202,24 @@ public class UserController {
         //3.开始更新
         int integer = userService.updateUser(user,loginUser);
         return ResultUtils.success(integer);
+
+    }
+
+
+    /**
+     * 获取最匹配的用户
+     * @param num
+     * @param request
+     * @return
+     */
+    @GetMapping("/match")
+    public BaseResponse<List<User>> matchUser(long num, HttpServletRequest request){
+        if (num <=0 ||num>20){
+            throw new BusinessException(ErrorCode.PARAMS_ERROR);
+        }
+        User loginUser = userService.getLoginUser(request);
+        List<User> userVoList= userService.matchUser(num,loginUser);
+        return ResultUtils.success(userVoList);
 
     }
 

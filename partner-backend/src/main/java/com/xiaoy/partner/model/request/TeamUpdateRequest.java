@@ -7,9 +7,9 @@ import java.util.Date;
 
 /**
  * ClassName: TeamAddRequest
- * Description:
+ * Description: 队伍更新请求体
  *
- * @Author: fy
+ * @Author: xiaoyu
  * @create: 2024-08-03 13:52
  * @version: 1.0
  */

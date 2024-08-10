@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
  * ClassName: InsertTestDataToDB
  * Description:
  *
- * @Author: fy
+ * @Author: xiaoyu
  * @create: 2024-07-28 20:55
  * @version: 1.0
  */
@@ -57,7 +57,7 @@ public class InsertTestDataToDB {
 
 
     /**
-     * 多线程的方式 实测10w数据8秒
+     * 多线程的方式 实测10w数据7秒
      * @throws InterruptedException
      */
     public void processBatchInsert(int dateCount) throws InterruptedException {

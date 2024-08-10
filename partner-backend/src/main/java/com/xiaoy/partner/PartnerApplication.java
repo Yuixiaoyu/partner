@@ -7,8 +7,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * 启动类
- * @author
- * @from
+ * @author xiaoyu
  */
 @SpringBootApplication
 @MapperScan("com.xiaoy.partner.mapper")

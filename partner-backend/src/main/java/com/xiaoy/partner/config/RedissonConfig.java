@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * ClassName: RedissonConfig
  * Description:
  *
- * @Author: fy
+ * @Author: xiaoyu
  * @create: 2024-08-02 11:17
  * @version: 1.0
  */

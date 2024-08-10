@@ -2,6 +2,7 @@ package com.xiaoy.partner.service;
 
 import com.xiaoy.partner.model.domain.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xiaoy.partner.model.vo.UserVo;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
@@ -86,4 +87,12 @@ public interface UserService extends IService<User> {
     boolean isAdmin(HttpServletRequest request);
 
     boolean isAdmin(User user);
+
+    /**
+     * 获取最匹配的用户
+     * @param num
+     * @param loginUser
+     * @return
+     */
+    List<User> matchUser(long num, User loginUser);
 }

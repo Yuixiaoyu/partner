@@ -1,7 +1,7 @@
 <template>
     <div @click="toTeamDetail(team)" class="body-card" v-for="(team,index) in teamList" :key="team.teamId">
         <div class="card-img"
-             :style="{ background: `no-repeat url(${team.teamImage})`, backgroundSize: '100% 100%' }"></div>
+             :style="{ background: `no-repeat url(${team.img})`, backgroundSize: '100% 100%' }"></div>
         <div class="card-content">
             <div class="team-info">
                 <div class="singe-line box" :title="team.name">

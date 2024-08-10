@@ -9,12 +9,13 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * ClassName: TeamQuery
  * Description: 队伍查询封装类
  *
- * @Author: fy
+ * @Author: xiaoyu
  * @create: 2024-08-03 9:35
  * @version: 1.0
  */
@@ -25,6 +26,11 @@ public class TeamQuery extends PageRequest {
      * id
      */
     private Long id;
+
+    /**
+     * id列表
+     */
+    private List<Long> idList;
 
 
     /**

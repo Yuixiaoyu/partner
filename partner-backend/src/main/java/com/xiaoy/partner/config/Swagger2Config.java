@@ -62,7 +62,7 @@ public class Swagger2Config {
     private ApiInfo apiInfo() {
 
         Contact contact = new Contact(
-                "fy", // 作者姓名
+                "xiaoyu", // 作者姓名
                 "https://fybreeze.cn/", // 作者网址
                 "1004579896@qq.com"); // 作者邮箱
 
